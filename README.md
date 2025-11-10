@@ -14,4 +14,4 @@
 
 
 ФАЙЛ README.md ОТРЕДАКТИРОВАН.
-
+[Ссылка на коммит](https://github.com/SerhioSamodurov/git_project_hw/commit/ec41561ea54b5e08a8231efebb6bf8566c2f819d)
