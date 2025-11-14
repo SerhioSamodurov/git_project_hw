@@ -14,24 +14,24 @@
 ВМ под управлением ОС Debian развернута вручную на виртуализации VirtualBox без применения vagrant
 После установки на ВМ с хост-машины gitlab доступен по домену gitlab.cicd-homework
 
-![1]()
+![1](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/1.png)
 
 После чего создан проект и репозиторий
 
-![2]()
+![2](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/2.png)
 
 Зарегистрировал docker-runner в gitlab
 Контейнер запущен на той же ВМ что и git lab
 
-![3]()
+![3](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/3.png)
 
 конфиг
 
-![4]()
+![4](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/4.png)
 
 В web ранер в статусе онлайн
 
-![5]()
+![5](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/5.png)
 
 
 ## Задание 2
