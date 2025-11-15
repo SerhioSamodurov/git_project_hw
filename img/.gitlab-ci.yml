@@ -1,0 +1,26 @@
+---
+stages:
+  - test
+  - static-analysis
+  - build
+
+test:
+  stage: test
+  image: golang:1.17
+  script: 
+   - go test .
+
+static-analysis:
+ stage: static-analysis
+ image:
+  name: sonarsource/sonar-scanner-cli
+  entrypoint: [""]
+ variables:
+ script:
+  - sonar-scanner -Dsonar.projectKey=hw_cicd -Dsonar.sources=. -Dsonar.host.url=http://gitlab.cicd-homework:9000 -Dsonar.login=squ_a620696c3c185c30294be300a159f5b69a42f0f1
+
+build:
+  stage: build
+  image: docker:latest
+  script:
+   - docker build .
