@@ -11,27 +11,27 @@
 
 ### Решение 1
 
-ВМ под управлением ОС Debian развернута вручную на виртуализации VirtualBox без применения vagrant
-После установки на ВМ с хост-машины gitlab доступен по домену gitlab.cicd-homework
+Развернул ВМ под управлениеи ОС Debian на виртуализации VirtualBox.
+Первоначально установил docker, sonar, postgresql  и подняты контейнеры
 
 ![1](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/1.png)
 
-После чего создан проект и репозиторий
+Установил gitlab, который доступен под доменному gitlab.cicd-homework имени с хост-машины (пока создал пустой проект для создания runner в рамках задачи)
 
 ![2](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/2.png)
 
-Зарегистрировал docker-runner в gitlab
-Контейнер запущен на той же ВМ что и git lab
+Зарегистрировал runner
 
 ![3](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/3.png)
 
-конфиг
+Изменил config.
 
 ![4](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/4.png)
 
-В web ранер в статусе онлайн
+Запустил runner
 
 ![5](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/5.png)
+
 
 
 ## Задание 2
@@ -46,3 +46,20 @@
 скриншоты с успешно собранными сборками.
 
 ### Решение 2
+
+Склонировал репозиторий и запушил его в локальный gitlab
+
+![6](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/6.png)
+
+Создан .gitlab-ci.yml и добавлен в репозиторй
+
+![7](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/7.png)
+
+После push runner отработал корректно
+
+![8](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/8.png)
+
+В sonar так же поодтягивается информация
+
+![9](https://github.com/SerhioSamodurov/git_project_hw/blob/main/img/9.png)
+
